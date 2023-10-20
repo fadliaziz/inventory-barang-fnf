@@ -1,6 +1,6 @@
 # Aplikasi Inventory Barang<br/>
-## Free Source Code Hehe<br/>
-
+## PT FNF METALINDO UTAMA<br/>
+Author : <code>Fadli Aziz</code></br>
 ### Aplikasi ini dibuat menggunakan
 - Codeigniter 3
 - Bootstrap 4
@@ -9,5 +9,5 @@
 - Chart.js
 
 ### Keterangan <br/>
-Database : <code>inv_barang</code><br/>
+Database Ada Di Folder : <code>Database/inv_barang.sql</code><br/>
 <br/>
