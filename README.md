@@ -1,5 +1,5 @@
-# Aplikasi Pengadaan Barang<br/>
-## Free Source Code<br/>
+# Aplikasi Inventory Barang<br/>
+## Free Source Code Hehe<br/>
 
 ### Aplikasi ini dibuat menggunakan
 - Codeigniter 3
@@ -9,5 +9,5 @@
 - Chart.js
 
 ### Keterangan <br/>
-Database : <code>ci_barang</code><br/>
+Database : <code>inv_barang</code><br/>
 <br/>
