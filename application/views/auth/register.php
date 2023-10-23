@@ -48,7 +48,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                    <button type="submit" class="btn btn-success btn-user btn-block">
                         Daftar
                     </button>
                     <div class="text-center mt-4">

@@ -80,12 +80,12 @@ class Laporan extends CI_Controller
                 $pdf->Ln();
             } else :
             $pdf->Cell(10, 7, 'No.', 1, 0, 'C');
-            $pdf->Cell(25, 7, 'Tgl Keluar', 1, 0, 'C');
-            $pdf->Cell(35, 7, 'ID Transaksi', 1, 0, 'C');
+            $pdf->Cell(18, 7, 'Tgl Keluar', 1,0, 'C');
+            $pdf->Cell(25, 7, 'ID Transaksi', 1, 0, 'C');
             $pdf->Cell(25, 7, 'Costumer', 1, 0, 'C');
             $pdf->Cell(40, 7, 'Jenis Barang', 1, 0, 'C');
             $pdf->Cell(30, 7, 'Tempat', 1, 0, 'C');
-            $pdf->Cell(30, 7, 'Jumlah Keluar', 1, 0, 'C');
+            $pdf->Cell(25, 7, 'Jumlah Keluar', 1, 0, 'C');
             $pdf->Cell(20, 7, 'Sisa', 1, 0, 'C');
             $pdf->Ln();
 
@@ -93,12 +93,12 @@ class Laporan extends CI_Controller
             foreach ($data as $d) {
                 $pdf->SetFont('Arial', '', 7);
                 $pdf->Cell(10, 7, $no++ . '.', 1, 0, 'C');
-                $pdf->Cell(25, 7, $d['tanggal_keluar'], 1, 0, 'C');
-                $pdf->Cell(35, 7, $d['id_barang_keluar'], 1, 0, 'C');
+                $pdf->Cell(18, 7, date('d-m-Y',strtotime($d['tanggal_keluar'])), 1, 0, 'C');
+                $pdf->Cell(25, 7, $d['id_barang_keluar'], 1, 0, 'C');
                 $pdf->Cell(25, 7, $d['nama_costumer'], 1, 0, 'C');
                 $pdf->Cell(40, 7, $d['nama_barang'], 1, 0, 'C');
                 $pdf->Cell(30, 7, $d['nama_jenis'], 1, 0, 'C');
-                $pdf->Cell(30, 7, $d['jumlah_keluar'] . ' ' . $d['nama_satuan'], 1, 0, 'C');
+                $pdf->Cell(25, 7, $d['jumlah_keluar'] . ' ' . $d['nama_satuan'], 1, 0, 'C');
                 $pdf->Cell(20, 7, $d['stok'] . ' ' . $d['nama_satuan'], 1, 0, 'C');
                 $pdf->Ln();
             }

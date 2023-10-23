@@ -24,7 +24,7 @@
     <link href="<?= base_url(); ?>assets/vendor/datatables/buttons/css/buttons.bootstrap4.min.css" rel="stylesheet">
     <link href="<?= base_url(); ?>assets/vendor/datatables/responsive/css/responsive.bootstrap4.min.css" rel="stylesheet">
     <link href="<?= base_url(); ?>assets/vendor/gijgo/css/gijgo.min.css" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         #accordionSidebar,
         .topbar {
@@ -212,9 +212,11 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
+                    <div class="p-1 bg-primary d-flex align-items-center justify-content-center rounded">
+                        <marquee class="text-white font-weight-bold" scrollamount="12">Info !!! Tolong Barang Di input Dengan Benar</marquee>
+                    </div>
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
+                    <h1 class="h3 p-1 mt-4 text-gray-800"><?= $title; ?></h1>
 
                     <?= $contents; ?>
 
@@ -263,7 +265,8 @@
             </div>
         </div>
     </div>
-
+    <!-- Aos Animation Javascript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Bootstrap core JavaScript-->
     <script src="<?= base_url(); ?>assets/vendor/jquery/jquery.min.js"></script>
     <script src="<?= base_url(); ?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -305,8 +308,6 @@
             var end = moment();
             
             function cb(start, end) {
-            console.log(start, end);
-                console.log(start.format('DD/MM/YYYY'))
                 $('#tanggal').val(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'));
             }
             console.log($('#tanggal').val())
