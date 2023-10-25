@@ -47,7 +47,7 @@ class Barangkeluar extends CI_Controller
             $data['barang'] = $this->admin->get('barang', null, ['stok >' => 0]);
 
             // Mendapatkan dan men-generate kode transaksi barang keluar
-            $kode = 'T-BK-' . date('dmy');
+            $kode = 'T-BK-' . date('ymd');
             $kode_terakhir = $this->admin->getMax('barang_keluar', 'id_barang_keluar', $kode);
             $kode_tambah = substr($kode_terakhir, -3, 3);
             $kode_tambah++;
