@@ -89,7 +89,7 @@
                                 <?php endforeach; ?>
                             </select>
                             <div class="input-group-append">
-                                <a class="btn btn-primary" href="<?= base_url('satuan/add'); ?>"><i class="fa fa-plus"></i></a>
+                                <a class="btn btn-success" href="<?= base_url('satuan/add'); ?>"><i class="fa fa-plus"></i></a>
                             </div>
                         </div>
                         <?= form_error('satuan_id', '<small class="text-danger">', '</small>'); ?>

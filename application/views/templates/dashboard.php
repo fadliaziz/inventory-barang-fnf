@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title><?= $title; ?> | Aplikasi Inventory Barang</title>
+    <title><?= $title; ?> | PT FNF METALINDO UTAMA</title>
 
     <!-- Custom fonts for this template-->
     <link href="<?= base_url(); ?>assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -44,9 +44,9 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex text-white align-items-center bg-primary justify-content-center" href="">
                 <div class="sidebar-brand-icon">
-                    <i class="fas fa-university"></i>
+                    <i class="fas fa-archive"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Inventory Barang</div>
+                <div class="sidebar-brand-text mx-2" style="font-size: 10px;">PT<br>FNF METALINDO UTAMA</div>
             </a>
 
             <!-- Nav Item - Dashboard -->
@@ -212,8 +212,8 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    <div class="p-1 bg-primary d-flex align-items-center justify-content-center rounded">
-                        <marquee class="text-white font-weight-bold" scrollamount="12">Info !!! Tolong Barang Di input Dengan Benar</marquee>
+                    <div class="d-flex align-items-center justify-content-center border-left-warning shadow h-100 py-2 rounded">
+                        <marquee class="text-dark font-weight-bold" scrollamount="12"> Info !!! Tolong Barang Di input Dengan Benar</marquee>
                     </div>
                     <!-- Page Heading -->
                     <h1 class="h3 p-1 mt-4 text-gray-800"><?= $title; ?></h1>

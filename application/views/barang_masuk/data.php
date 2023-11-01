@@ -26,7 +26,7 @@
                     <th>No. </th>
                     <th>No Transaksi</th>
                     <th>Tanggal</th>
-                    <th>Supplier</th>
+                    <th align="center">Supplier</th>
                     <th>Costumer</th>
                     <th>Jenis</th>
                     <th>Tempat</th>
@@ -45,7 +45,7 @@
                             <td><?= $no++; ?></td>
                             <td><?= $bm['id_barang_masuk']; ?></td>
                             <td><?= date('d-m-Y',strtotime($bm['tanggal_masuk'])); ?></td>
-                            <td><?= $bm['nama_supplier']; ?></td>
+                            <td align="center"><?= $bm['nama_supplier']; ?></td>
                             <td><?= $bm['nama_costumer']; ?></td>
                             <td><?= $bm['nama_barang']; ?></td>
                             <td><?= $bm['nama_jenis']; ?></td>
